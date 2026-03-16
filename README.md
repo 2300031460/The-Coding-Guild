@@ -2,9 +2,20 @@
 
 ### AI-Powered Predictive Income Protection for Gig Delivery Workers
 
-Guidewire DEVTrails 2026 – Phase 1 Submission
+Guidewire DEVTrails 2026 
 
 ---
+## 📋 Team Members & Contributions
+
+| 👤 Team Member                   | 🎯 Role                   | 💫 Contribution                                                                             |
+| -------------------------------- | ------------------------- | ------------------------------------------------------------------------------------------- |
+| Sankurathri Saketh               | 🧑‍💼 Team Lead           | Project coordination, team management, and strategic planning                               |
+| Gourishetti Ruthvik              | 🚀 Lead Developer         | Project leadership, code implementation, integration management, and repository maintenance |
+| G. Sai Pradhun                   | 🏗️ Project Architect     | System architecture design, modular structure planning, and technical framework development |
+| Girish Gautam Vinodh Kumar       | 💻 Developer              | *Contribution to be added*                                                                  |
+| Bangaru Naga Venkata Yuva Nandan | 🔬 Research & Development | *Contribution to be added*                                                                  |
+
+
 
 # 1. Abstract
 
@@ -156,16 +167,25 @@ Artificial intelligence is central to Sentinel’s disruption detection and pric
 ---
 
 # 7. Application Workflow
+## 7. Application Workflow
 
-| Step | Process                                    |
-| ---- | ------------------------------------------ |
-| 1    | Delivery partner registers in Sentinel app |
-| 2    | Worker links gig platform accounts         |
-| 3    | Sentinel monitors environmental conditions |
-| 4    | AI models analyze disruption risks         |
-| 5    | Parametric trigger engine validates event  |
-| 6    | Compensation automatically credited        |
+```mermaid
+flowchart TD
 
+A[Delivery Partner Registers in Sentinel App]
+B[Worker Links Gig Platform Accounts]
+C[Sentinel Monitors Environmental Conditions]
+D[AI Models Analyze Disruption Risks]
+E[Parametric Trigger Engine Validates Event]
+F[Compensation Automatically Credited to Worker Wallet]
+
+A --> B
+B --> C
+C --> D
+D --> E
+E --> F
+
+```
 ---
 
 # 8. Weekly Premium Model
@@ -182,18 +202,19 @@ To match gig worker income patterns, Sentinel uses **weekly micro-premiums**.
 ---
 
 # 9. Technology Stack
+## Complete Technology Stack & Implementation
 
-| Category             | Technology                        |
-| -------------------- | --------------------------------- |
-| Frontend             | React Native                      |
-| Backend              | Node.js, Python FastAPI           |
-| Machine Learning     | TensorFlow, Scikit-learn, XGBoost |
-| Database             | PostgreSQL                        |
-| Cloud Infrastructure | AWS                               |
-| Real-time Data       | Weather & Pollution APIs          |
-| Payments             | UPI Integration, Razorpay         |
-
----
+| Technology | Category | Purpose in Project | Implementation Details |
+|-----------|----------|-------------------|----------------------|
+| PyTorch | AI Framework | Weather pattern prediction | LSTM models analyze rain data → predict delivery delays → estimate income impact for Swiggy/Zomato workers |
+| TensorFlow | AI Framework | Income drop detection | CNN/LSTM processes earnings history → flags 20–30% drops → generates risk embeddings |
+| LangChain | AI Orchestration | Smart decision engine | Connects weather model + income model + Pinecone → makes "Approve ₹8,000 payout" decisions automatically |
+| Pinecone | Vector Database | Worker profile storage & similarity search | Stores embeddings + metadata (worker_id, earnings ₹25k, city: Hyderabad, weather: rain) → finds similar cases instantly |
+| React.js + Next.js | Frontend | Live dashboard & demo | Real-time worker monitoring, income charts, payout approval screens, weather maps |
+| FastAPI | Backend API | Model serving | `/predict-weather`, `/check-income`, `/trigger-payout` endpoints connect frontend → Python ML stack |
+| OpenAI Embeddings | AI Embeddings | Convert data to vectors | Transforms "Heavy rain + Swiggy worker + Hyderabad" → 1536-dim vectors for Pinecone storage |
+| Docker | Containerization | Easy deployment | Packages entire stack → runs anywhere (hackathon laptop → cloud) |
+| Tailwind CSS | Styling | Professional UI | Responsive design for judges → mobile view simulates gig worker app |
 
 # 10. Expected Impact
 
