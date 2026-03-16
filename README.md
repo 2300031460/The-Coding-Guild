@@ -187,6 +187,18 @@ This modular architecture allows **independent services and scalable deployment*
 
 # ⚡ 5. Parametric Disruption Triggers
 
+# Low-Risk Zone Triggers (0.8× Multiplier)
+
+Regions: Rajasthan, Delhi, Madhya Pradesh, Uttar Pradesh
+
+| Trigger | Data Source | Threshold Condition | Payout Rule | Fraud Validation | Coverage / Plans |
+|--------|-------------|--------------------|-------------|------------------|------------------|
+| **Heavy Rain / Flood Alert** (Environmental) | IMD Open Data API + District Flood Warning System | Rainfall exceeds IMD Orange Alert threshold or district flood warning issued in worker’s zone | Full-day income replacement for each day the alert remains active | Worker GPS confirms presence within alert zone and delivery volume significantly drops | Wanderer ₹23/wk (net ₹0) <br> Guardian ₹47/wk (net ₹0) <br> Vanguard ₹79/wk (net ₹9) <br> Sentinel ₹119/wk (net ₹49) |
+| **Extreme Heat Wave** (Environmental) | IMD Heatwave Advisory + OpenWeatherMap | Temperature exceeds safe outdoor limits and official heatwave advisory is active | Half-day income replacement during peak heat hours | Worker must be active during delivery hours and GPS confirms presence in heat zone | Wanderer ₹23/wk (net ₹0) <br> Guardian ₹47/wk (net ₹0) <br> Vanguard ₹79/wk (net ₹9) <br> Sentinel ₹119/wk (net ₹49) |
+| **Hazardous AQI Event** (Environmental) | CPCB National AQI + Government GRAP advisory | AQI crosses hazardous level and outdoor work restrictions are issued | Full-day income replacement for AQI day events | Delivery volume reduction verified across platforms and validated with CPCB AQI readings | Vanguard ₹79/wk (net ₹9) <br> Sentinel ₹119/wk (net ₹49) |
+| **Social Disruption** (Social) | Government advisory feeds + district announcements | Curfew, bandh, or Section 144 order confirmed in worker’s district | Hourly income replacement during disruption window | Event verified using NLP from official announcements and GPS confirmation of worker location | Vanguard ₹79/wk (net ₹9) <br> Sentinel ₹119/wk (net ₹49) |
+| **Platform Delivery Blackout** (Platform) | Platform API health monitor + outage tracking system | Delivery app outage exceeding two hours in worker’s zone | Hourly income replacement up to six hours per incident | Worker GPS confirms presence and peer delivery activity shows zero orders | Sentinel ₹119/wk (net ₹49) |
+
 # High-Risk Zone Triggers (1.4× Multiplier)
 
 Regions: Mumbai, Kolkata, Chennai, Kerala, Assam
