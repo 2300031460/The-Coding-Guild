@@ -28,8 +28,11 @@ The system combines **machine learning, environmental monitoring, and automated 
 
 
 ---
+<p align="center">
 
-# 📄 1. Abstract
+![Abstract](https://img.shields.io/badge/📄%201.%20ABSTRACT-Section-0984E3?style=for-the-badge)
+
+</p>
 
 Substantial employment opportunities have been created in the Indian gig economy with the establishment of digital delivery platforms such as Swiggy, Zomato, Amazon, Blinkit, and Zepto. These platforms utilize a large workforce by allocating tasks among delivery partners, who mostly work as independent contractors and are paid according to the tasks performed for these platforms. Even though this has created new employment opportunities for the Indian populace, employees have become vulnerable to economic volatility due to external factors.
 
@@ -47,7 +50,11 @@ The platform will also introduce a **weekly micro-premium model**, allowing work
 
 The present solution is highly relevant within the modern gig economy.
 
-# ⚠️ 2. Problem Statement
+<p align="center">
+
+![Problem Statement](https://img.shields.io/badge/⚠️%202.%20PROBLEM%20STATEMENT-Section-D63031?style=for-the-badge)
+
+</p>
 
 Major gig platforms operating in India include:
 
@@ -96,7 +103,12 @@ This results in a **major uninsured income gap** in the gig economy.
 
 ---
 
-# 💡 3. Proposed Solution
+
+<p align="center">
+
+![Problem Solution](https://img.shields.io/badge/💡%203.%20PROPOSED%20SOLUTION-Section-00CEC9?style=for-the-badge)
+
+</p>
 
 Sentinel is an **AI-powered parametric insurance platform** that provides automated income protection for gig delivery workers.
 
@@ -127,7 +139,12 @@ Machine learning models analyze these signals to detect disruptions and activate
 
 ---
 
-# 🏗️ 4. System Architecture
+<p align="center">
+
+![System Architecture](https://img.shields.io/badge/🏗️%204.%20SYSTEM%20ARCHITECTURE-Section-FD9644?style=for-the-badge)
+
+</p>
+
 
 The Sentinel platform follows a **layered architecture design**.
 
@@ -167,7 +184,11 @@ This modular architecture allows **independent services and scalable deployment*
 
 ---
 
-# ⚡ 5. Parametric Disruption Triggers
+<p align="center">
+
+![Parametric Description Triggers](https://img.shields.io/badge/⚡%205.%20PARAMETRIC%20TRIGGERS-Section-E84393?style=for-the-badge)
+
+</p>
 
 # Low-Risk Zone Triggers (0.8× Multiplier)
 
@@ -193,7 +214,12 @@ Regions: Mumbai, Kolkata, Chennai, Kerala, Assam
 | **Social Disruption** (Social) | Government advisory feeds + district announcements | Curfew, bandh, or Section 144 order confirmed in worker’s district | Hourly income replacement during disruption window | Event verified using NLP from official announcements and GPS confirmation of worker location | Vanguard ₹139/wk (net ₹69) <br> Sentinel ₹209/wk (net ₹139) <br> Paragon ₹279/wk (high only) |
 | **Platform Delivery Blackout** (Platform) | Platform API health monitor + outage tracking system | Delivery app outage exceeding two hours in worker’s zone | Hourly income replacement up to six hours per incident | Worker GPS confirms presence and peer delivery activity shows zero orders | Sentinel ₹209/wk (net ₹139) <br> Paragon ₹279/wk (high only) |
 
-# 🧠 6. AI and Machine Learning Components
+
+<p align="center">
+
+![AI Machine And Learning Components](https://img.shields.io/badge/🧠%206.%20AI%20%26%20ML%20COMPONENTS-Section-2D3436?style=for-the-badge)
+
+</p>
 
 | Component | Technology | Function (with more description) |
 |-----------|-----------|-----------------------------------|
@@ -202,7 +228,11 @@ Regions: Mumbai, Kolkata, Chennai, Kerala, Assam
 | Premium Pricing | Gradient Boosted Trees | Calculate dynamic premiums by studying risk factors (city, season, disruption history) and setting fair weekly prices for different workers and zones. |
 | Zone Classification | ML Risk Models | Categorize delivery zones by risk level (low, medium, high) based on historical disruption data, so high-risk areas get stronger monitoring and protection. |
 
-# 🔄 7. Application Workflow
+<p align="center">
+
+![Application Workflow](https://img.shields.io/badge/🔄%207.%20APPLICATION%20WORKFLOW-Section-00B894?style=for-the-badge)
+
+</p>
 
 ```mermaid
 flowchart TD
@@ -223,7 +253,11 @@ E --> F
 
 ---
 
-# 💰 8. Weekly Premium Model
+<p align="center">
+
+![Weekly Premium Model](https://img.shields.io/badge/💰%208.%20WEEKLY%20PREMIUM%20MODEL-Section-FDCB6E?style=for-the-badge)
+
+</p>
 # Sentinel Insurance Plans
 
 ## Low-Risk Zone (0.8× Multiplier)
@@ -260,7 +294,12 @@ High-risk zones include five plans: Wanderer → Guardian → Vanguard → Senti
 The **Paragon (Ultra)** plan is available only in extreme flood, storm, and pollution-prone regions.
 ---
 
-# ⚙️ 9. Technology Stack
+
+<p align="center">
+
+![Techoligies Stack](https://img.shields.io/badge/⚙️%209.%20TECHNOLOGY%20STACK-Section-636E72?style=for-the-badge)
+
+</p>
 
 | Technology        | Category         | Purpose                               |
 | ----------------- | ---------------- | ------------------------------------- |
@@ -276,7 +315,11 @@ The **Paragon (Ultra)** plan is available only in extreme flood, storm, and poll
 
 ---
 
-# 🌍 10. Expected Impact
+<p align="center">
+
+![Expected Impact](https://img.shields.io/badge/🌍%2010.%20EXPECTED%20IMPACT-Section-00A8FF?style=for-the-badge)
+
+</p>
 
 Sentinel introduces a **transformative financial safety net** for millions of gig delivery workers who remain vulnerable to income loss caused by environmental and social disruptions — delivering fast, fair, and fully automated protection.
 
@@ -322,4 +365,3 @@ By combining **predictive AI, real-time environmental monitoring, parametric tri
 **Inclusive** — accessible to workers on any gig platform across India  
 
 ---
-
