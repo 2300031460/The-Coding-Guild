@@ -31,39 +31,21 @@ The system combines **machine learning, environmental monitoring, and automated 
 
 # 📄 1. Abstract
 
-Significant employment opportunities have been created in the Indian gig economy through digital delivery platforms such as **Swiggy, Zomato, Amazon, Blinkit, and Zepto**.
+Substantial employment opportunities have been created in the Indian gig economy with the establishment of digital delivery platforms such as Swiggy, Zomato, Amazon, Blinkit, and Zepto. These platforms utilize a large workforce by allocating tasks among delivery partners, who mostly work as independent contractors and are paid according to the tasks performed for these platforms. Even though this has created new employment opportunities for the Indian populace, employees have become vulnerable to economic volatility due to external factors.
 
-These platforms employ thousands of delivery partners who operate as **independent contractors** and earn income based on completed tasks.
+Environmental factors such as rainfall, air quality, extreme temperatures, and storms, as well as social factors such as unplanned curfews, local strikes, and closure of market zones, have become common causes of disruptions for these platforms in Indian cities, thereby reducing the tasks performed by these employees and consequently their earnings due to reduced access to pickup and drop-off locations. Employees of these platforms mostly work as independent contractors and are not entitled to any benefits such as paid leaves and insurance during periods of reduced income.
 
-However, these workers are highly vulnerable to **external environmental disruptions**, including:
+To address the issues being experienced by platform workers within the city of Bengaluru, the present project proposes the development of a predictive income protection platform named **Sentinel**.
 
-* Heavy rainfall
-* Air pollution
-* Extreme temperatures
-* Storms and natural disasters
+The platform is expected to provide workers with the required benefits in response to reduced income due to environmental and social disruptions. The platform will provide benefits according to a parametric insurance model. The platform will integrate various data sources, including meteorological stations, air quality stations, geolocation, and real-time social event feeds.
 
-Such disruptions directly affect delivery activity, reducing the number of completed tasks and ultimately lowering workers' income.
+Machine learning will be used to assess the risk level of various disruptions, both environmental and social. The platform will provide workers with required benefits once triggers have been activated.
 
-> ⚠️ **Key Issue:** Gig workers typically do not receive benefits such as paid leave, insurance, or financial protection when their income drops.
+In addition to the aforementioned functionality, the platform will be a multi-platform solution that provides a single unified system for income protection for delivery partners using multiple applications. It ensures seamless integration across platforms and delivers cohesive benefits.
 
-To address this challenge, the project proposes **Sentinel**, an **AI-based predictive income protection platform**.
+The platform will also introduce a **weekly micro-premium model**, allowing workers to make small, manageable payments aligned with their weekly earnings.
 
----
-
-### 📡 Data Sources Used by Sentinel
-
-| Data Source                     | Purpose                            |
-| ------------------------------- | ---------------------------------- |
-| Weather Monitoring Services     | Detect rainfall, storms, heatwaves |
-| Air Quality Monitoring Stations | Track pollution levels             |
-| Geo-location Systems            | Identify affected delivery zones   |
-| Platform APIs                   | Monitor delivery activity          |
-
-Machine learning models analyze these inputs to **predict disruption risks** and automatically trigger compensation for affected workers.
-
-Sentinel also introduces a **weekly micro-premium model** that aligns with the **weekly earning cycle of gig workers**.
-
----
+The present solution is highly relevant within the modern gig economy.
 
 # ⚠️ 2. Problem Statement
 
@@ -311,4 +293,3 @@ By combining **predictive analytics, automated verification, and instant digital
 
 ---
 
-⭐ *If you like this project, consider giving the repository a star!*
