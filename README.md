@@ -278,18 +278,48 @@ The **Paragon (Ultra)** plan is available only in extreme flood, storm, and poll
 
 # 🌍 10. Expected Impact
 
-Sentinel introduces a **new financial protection system** for gig workers vulnerable to environmental disruptions.
+Sentinel introduces a **transformative financial safety net** for millions of gig delivery workers who remain vulnerable to income loss caused by environmental and social disruptions — delivering fast, fair, and fully automated protection.
 
-### Key Benefits
+---
 
-| Impact Area               | Benefit                               |
-| ------------------------- | ------------------------------------- |
-| Worker Financial Security | Protects income during disruptions    |
-| Faster Compensation       | Eliminates manual insurance claims    |
-| Scalable Protection       | Can support millions of workers       |
-| Technological Innovation  | Combines AI with parametric insurance |
+### Core Impact Areas
 
-By combining **predictive analytics, automated verification, and instant digital payouts**, Sentinel creates a **scalable safety net for gig economy workers**.
+| 🏷️ Impact Area | 💡 Benefit | 📈 Expected Outcome |
+|----------------|-----------|---------------------|
+| **Worker Financial Security** | Protects weekly income during rain, heatwaves, AQI events, and social disruptions | Workers no longer face zero-income weeks due to factors beyond their control |
+| **Instant Automated Compensation** | Eliminates manual insurance claims and paperwork entirely | Payouts credited directly to worker wallet within minutes of trigger activation |
+| **Multi-Platform Unified Coverage** | Single Sentinel subscription covers income loss across Swiggy, Zomato, Blinkit, Zepto, Amazon, and Flipkart | Workers gain seamless protection regardless of which platforms they use |
+| **AI-Driven Risk Intelligence** | LSTM and Gradient Boosted models continuously predict disruption risk before events occur | Proactive alerts and dynamic pricing that adapts to seasonal and regional risk patterns |
+| **Scalable Social Infrastructure** | Modular architecture can onboard millions of gig workers across Indian cities | Platform scales from Tier-1 cities to smaller towns as gig economy expands |
+| **Fraud-Resistant Payouts** | GPS verification, peer delivery activity tracking, and anomaly detection models validate every claim | Ensures fair disbursement while protecting the insurance pool from misuse |
+| **Flexible Micro-Premium Model** | Weekly premiums starting as low as ₹23/week — aligned with gig workers' weekly earnings cycle | Removes the barrier of large annual premiums that are unaffordable for daily-wage earners |
+| **Zone-Aware Risk Pricing** | Low-risk and high-risk zone multipliers (0.8× and 1.4×) ensure geographically fair pricing | Workers in flood-prone cities like Mumbai and Chennai get stronger coverage at justified rates |
+
+---
+
+### 📊 Scale of Addressable Impact
+
+| Metric | Estimate |
+|-----------|------------|
+| Gig delivery workers in India (2024) | **~15 Million+** |
+| Workers currently without income protection | **~90%** |
+| Cities targeted in Phase 1 | Bengaluru, Mumbai, Delhi, Chennai, Kolkata |
+| Platforms integrated | Swiggy, Zomato, Blinkit, Zepto, Amazon, Flipkart |
+| Minimum weekly premium (Low-Risk Zone) | ₹23/week (Net ₹0 after platform deduction) |
+| Maximum weekly payout (High-Risk Zone) | ₹4,000/week (Paragon Plan) |
+
+---
+
+### Why Sentinel Matters
+
+> *"Gig workers power India's digital economy — yet they are the least protected when it breaks down."*
+
+By combining **predictive AI, real-time environmental monitoring, parametric triggers, and instant UPI payouts**, Sentinel closes the **most critical uninsured gap** in India's gig economy — delivering compensation that is:
+
+**Automatic** — no claims, no paperwork  
+**Transparent** — trigger conditions are pre-defined and verifiable  
+**Affordable** — micro-premiums deducted weekly from platform earnings  
+**Inclusive** — accessible to workers on any gig platform across India  
 
 ---
 
