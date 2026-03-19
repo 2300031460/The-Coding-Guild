@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --bg-mist: #eef8ff;
+  --bg-soft: #f8fcff;
+  --ink-900: #13344a;
+  --ink-700: #2f546f;
+  --line-soft: #cde1ef;
+  --sea-500: #2f7ca7;
+  --sea-600: #25688f;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--ink-900);
+  background:
+    radial-gradient(1300px 520px at 8% -5%, rgba(147, 208, 255, 0.45), rgba(255, 255, 255, 0) 60%),
+    radial-gradient(900px 420px at 100% 0%, rgba(163, 230, 197, 0.35), rgba(255, 255, 255, 0) 62%),
+    linear-gradient(180deg, var(--bg-mist), var(--bg-soft));
+}
+
+@layer components {
+  .surface-card {
+    @apply rounded-2xl border bg-white/85 shadow-sm backdrop-blur-sm;
+    border-color: var(--line-soft);
+  }
+
+  .section-title {
+    @apply text-sm font-semibold tracking-wide;
+    color: var(--ink-700);
+  }
+
+  .btn-primary {
+    @apply rounded-xl px-4 py-2 text-sm font-medium text-white transition;
+    background: linear-gradient(135deg, var(--sea-500), var(--sea-600));
+  }
+
+  .btn-primary:hover {
+    filter: brightness(1.03);
+  }
+}
