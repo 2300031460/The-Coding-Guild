@@ -8,14 +8,14 @@ import { getSelectedPlanId } from "@/lib/planStorage";
 import { PayoutRecord, Plan, TriggerEvent } from "@/types";
 
 export default function EvaluatePage() {
-  const [selectedPlanId, setSelectedPlanId] = useState("guardian");
+  const [selectedPlanId] = useState(() => getSelectedPlanId("guardian"));
   const [plans, setPlans] = useState<Plan[]>([]);
   const [triggers, setTriggers] = useState<TriggerEvent[]>([]);
   const [newPayouts, setNewPayouts] = useState<PayoutRecord[]>([]);
   const [loading, setLoading] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   useEffect(() => {
-    setSelectedPlanId(getSelectedPlanId("guardian"));
     getPlans("medium")
       .then(setPlans)
       .catch((error) => console.error("Failed to fetch plans:", error));
@@ -23,11 +23,15 @@ export default function EvaluatePage() {
 
   async function runEvaluation() {
     setLoading(true);
+    setErrorMessage(null);
     try {
       const result = await evaluateTriggers("worker-001", selectedPlanId, "medium");
       setTriggers(result.triggers);
       setNewPayouts(result.payout_records);
       await getPayouts();
+    } catch (error) {
+      const message = error instanceof Error ? error.message : "Failed to run evaluation";
+      setErrorMessage(message);
     } finally {
       setLoading(false);
     }
@@ -50,6 +54,12 @@ export default function EvaluatePage() {
           </button>
         </div>
       </section>
+
+      {errorMessage ? (
+        <section className="surface-card border-[#f2c5ca] bg-[#fff5f6] p-4">
+          <p className="text-sm text-[#a14f57]">Evaluation failed: {errorMessage}</p>
+        </section>
+      ) : null}
 
       <TriggerStatus triggers={triggers} />
 

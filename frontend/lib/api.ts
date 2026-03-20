@@ -23,7 +23,8 @@ async function request<T>(path: string, options?: RequestInit): Promise<T> {
   });
 
   if (!response.ok) {
-    throw new Error(`Request failed: ${response.status}`);
+    const text = await response.text();
+    throw new Error(`Request failed: ${response.status}${text ? ` - ${text.slice(0, 120)}` : ""}`);
   }
 
   return response.json() as Promise<T>;
